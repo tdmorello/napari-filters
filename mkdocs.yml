@@ -1,0 +1,10 @@
+site_name: napari-filters
+site_description: A napari plugin to add basic image filters
+site_author: Tim Morello
+
+theme: readthedocs
+
+repo_url: https://github.com/tdmorello/napari-filters
+
+pages:
+- Home: index.md
