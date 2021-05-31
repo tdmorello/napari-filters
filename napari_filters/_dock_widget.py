@@ -89,7 +89,7 @@ def widget_wrapper():
                 sleep(1)
                 self.reportProgress(i + 1)
 
-    return RealPythonExample
+    return ExampleQWidget
 
 
 @napari_hook_implementation
