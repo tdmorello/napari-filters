@@ -4,7 +4,7 @@
 [![PyPI](https://img.shields.io/pypi/v/napari-filters.svg?color=green)](https://pypi.org/project/napari-filters)
 [![Python Version](https://img.shields.io/pypi/pyversions/napari-filters.svg?color=green)](https://python.org)
 [![tests](https://github.com/tdmorello/napari-filters/workflows/tests/badge.svg)](https://github.com/tdmorello/napari-filters/actions)
-[![codecov](https://codecov.io/gh/tdmorello/napari-filters/branch/master/graph/badge.svg)](https://codecov.io/gh/tdmorello/napari-filters)
+[![codecov](https://codecov.io/gh/tdmorello/napari-filters/branch/main/graph/badge.svg)](https://codecov.io/gh/tdmorello/napari-filters)
 
 A napari plugin to add basic image filters
 
