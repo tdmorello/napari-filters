@@ -48,7 +48,7 @@ def widget_wrapper():
     """Wrap a QWidget to make compatible with napari threading."""
     from napari.qt.threading import thread_worker
 
-    class ExampleQWidget(QWidget):
+    class RealPythonExample(QWidget):
         def __init__(self, viewer: 'napari.viewer.Viewer') -> None:
             super().__init__()
             self.clicksCount = 0
@@ -73,7 +73,7 @@ def widget_wrapper():
             layout.addStretch()
             layout.addWidget(self.stepLabel)
             layout.addWidget(self.longRunningBtn)
-            layout.addWidget(self.pbar)
+            # layout.addWidget(self.pbar)
 
         def countClicks(self):
             self.clicksCount += 1
@@ -89,7 +89,7 @@ def widget_wrapper():
                 sleep(1)
                 self.reportProgress(i + 1)
 
-    return ExampleQWidget
+    return RealPythonExample
 
 
 @napari_hook_implementation

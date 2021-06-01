@@ -1,14 +1,15 @@
-from napari_filters import napari_experimental_provide_dock_widget
+import napari_filters
 import pytest
 
 # this is your plugin name declared in your napari.plugins entry point
-MY_PLUGIN_NAME = "napari-filters"
+MY_PLUGIN_NAME = "napari-testplugin"
 # the name of your widget(s)
-MY_WIDGET_NAMES = ["widget_wrapper"]
+MY_WIDGET_NAMES = ["Real Python Example"]
 
 
 @pytest.mark.parametrize("widget_name", MY_WIDGET_NAMES)
-def test_something_with_viewer(widget_name, make_napari_viewer):
+def test_something_with_viewer(widget_name, make_napari_viewer, napari_plugin_manager):
+    napari_plugin_manager.register(napari_filters, name=MY_PLUGIN_NAME)
     viewer = make_napari_viewer()
     num_dw = len(viewer.window._dock_widgets)
     viewer.window.add_plugin_dock_widget(
